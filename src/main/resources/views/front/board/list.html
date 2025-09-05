@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/layout}">
+
+<section layout:fragment="content">
+    <h2>게시글 목록</h2>
+    <a href="/board/insert">게시글 등록</a>
+    <ul>
+        <li th:each="data : ${result.data_list}">
+            <p th:text="${data.title}">Title</p><br>
+            <p th:text="${data.contents}">Contents</p>
+        </li>
+    </ul>
+</section>
+</html>
