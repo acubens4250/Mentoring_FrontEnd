@@ -1,0 +1,21 @@
+<!Document html>
+<html xmlns:th="http://www/thymeleaf.org"
+        xmlns:layout="http://www/ultraq.net.nz/tymeleaf/layout">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/front/css/style.css}"/>
+    <script th:src="@{/front/js/script.js}"></script>
+</head>
+
+<body>
+
+    <th:block th:replace="layout/header :: header"></th:block>
+
+    <main layout:fragment="content">
+
+    </main>
+
+    <th:block th:replace="layout/footer :: footer"></th:block>
+</body>
+</html>

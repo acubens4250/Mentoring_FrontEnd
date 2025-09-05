@@ -14,7 +14,6 @@ public class AdminindexController {
 
         model.addAttribute("title", "home :: title");
         model.addAttribute("content", "home ::content");
-
         return "layout/layout";
     }
 }
